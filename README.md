@@ -13,5 +13,3 @@ Desarrollada en REACT, base de datos en MongoDB y una API para la gestión de pe
 #### Integrantes
 
 * Elvis Nogueiras Gonzalez - (alu0101281308@ull.edu.es)
-* José Daniel Fuentes Marra - (alu0101166247@ull.edu.es)
-* Carla Fernanda Flores Gonzales - (alu0101278353@ull.edu.es)
