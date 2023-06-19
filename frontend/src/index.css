@@ -1,0 +1,308 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Color del navbar*/
+.bg-danger {
+  background-color: #bb6464 !important;
+}
+
+.logo img {
+  width: 16%;
+}
+
+.footer {
+  background-color: #2d3e50;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.baterias {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--blanco);
+  padding: 0.5rem 2rem;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.container-tienda {
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+
+.usuario-navbar {
+  text-transform: capitalize;
+  color: white !important;
+}
+
+.botones {
+  background-color: #2666CF;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.carta-bateria {
+  border: 1px;
+  border-style: solid;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.carta-imagen {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.carta-body {
+  margin-top: -16px;
+  /* background: linear-gradient(to bottom, rgb(119, 154, 248), white); */
+}
+
+.carta-body .carta-titulo {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.carta-voltaje,
+.carta-precio {
+  text-align: center;
+}
+
+.carta-boton {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.carta-boton button {
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.precio-venta {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.titulo-venta {
+  text-align: center;
+  padding-top: 30px;
+  text-transform: capitalize;
+}
+
+.informacion-venta {
+  text-align: center;
+}
+
+.texto-izquierdo {
+  text-align: left;
+}
+
+.texto-derecho {
+  float: right;
+}
+
+.boton-venta {
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.boton-venta button {
+  text-align: center;
+}
+
+.menu-usuario {
+  border: 1px;
+  border-style: solid;
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  display: table-cell;
+}
+
+@media screen and (max-width: 767px) {
+  .container-login {
+    border: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    margin-top: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 7%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .container-login {
+    border: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    margin-top: 7%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 7%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-venta {
+    border: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .container-venta {
+    border: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-register {
+    border: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 7%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .container-register {
+    border: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    margin-top: 7%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 7%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-publicar {
+    border: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    margin-top: 7%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 7%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .container-publicar {
+    border: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    margin-top: 7%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 7%;
+  }
+}
+
+.alerta-error {
+  text-align: center;
+  background-color: rgb(230, 78, 78);
+  color: white;
+}
+
+/* .titulo-venta {
+  margin-top: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.imagen-venta {
+  margin: auto;
+}
+
+.descripcion-venta {
+  display: flex;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.descripcion-venta p {
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.venta-precio {
+  margin: auto;
+} */

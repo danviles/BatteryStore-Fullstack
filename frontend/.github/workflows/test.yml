@@ -1,0 +1,45 @@
+name: Frontend Test
+
+on: [push]
+
+jobs:
+  frontend-test:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm install
+    - run: npm run test
+    - name: Send Slack Notification on Failure
+      if: ${{ failure() }}
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_CHANNEL: e08
+        SLACK_COLOR: "#9e2a2b"
+        SLACK_ICON: https://github.com/rtCamp.png?size=48
+        SLACK_MESSAGE: "Failed tests"
+        SLACK_TITLE: Failed execution
+        SLACK_USERNAME: Test
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+    - name: Send Slack Notification on Success
+      if: ${{ !failure() }}
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_CHANNEL: e08
+        SLACK_COLOR: "#7CFC00"
+        SLACK_ICON: https://github.com/rtCamp.png?size=48
+        SLACK_MESSAGE: "Successful tests"
+        SLACK_TITLE: Successful tests
+        SLACK_USERNAME: Test
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        
